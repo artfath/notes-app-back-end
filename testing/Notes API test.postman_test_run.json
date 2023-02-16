@@ -1,0 +1,315 @@
+{
+	"id": "c714e209-9df6-44b1-9dc7-d1da604d671e",
+	"name": "Notes API test",
+	"timestamp": "2023-02-16T01:38:22.582Z",
+	"collection_id": "18310495-41e54988-7f58-4089-af60-64877febec94",
+	"folder_id": 0,
+	"environment_id": "18310495-5237c851-815d-4e42-b52f-889a3af96ff5",
+	"totalPass": 28,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-02-16T01:38:15.174Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6493a11c-324d-464b-bb7f-4da715cf2fbd",
+			"name": "Adding Notes",
+			"url": "https://notes-app-back-end-chi.vercel.app//notes",
+			"time": 568,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"response status code should have 201 value": true,
+				"response Content-Type header should have application/json value": true,
+				"response body should be an object": true,
+				"response body should have the correct property and value": true,
+				"response body data should have noteId property and not equal to empty": true
+			},
+			"testPassFailCounts": {
+				"response status code should have 201 value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response Content-Type header should have application/json value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should have the correct property and value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body data should have noteId property and not equal to empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				568
+			],
+			"allTests": [
+				{
+					"response status code should have 201 value": true,
+					"response Content-Type header should have application/json value": true,
+					"response body should be an object": true,
+					"response body should have the correct property and value": true,
+					"response body data should have noteId property and not equal to empty": true
+				}
+			]
+		},
+		{
+			"id": "78b98945-3a07-4048-aec5-5ca2038803ed",
+			"name": "Getting All Notes",
+			"url": "https://notes-app-back-end-chi.vercel.app//notes",
+			"time": 570,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response status code should have 200 value": true,
+				"response Content-Type header should have application/json value": true,
+				"response body should an object": true,
+				"response body should have the correct property and value": true,
+				"response body data should have a notes array and contain at least 1 item": true
+			},
+			"testPassFailCounts": {
+				"response status code should have 200 value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response Content-Type header should have application/json value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should have the correct property and value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body data should have a notes array and contain at least 1 item": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				570
+			],
+			"allTests": [
+				{
+					"response status code should have 200 value": true,
+					"response Content-Type header should have application/json value": true,
+					"response body should an object": true,
+					"response body should have the correct property and value": true,
+					"response body data should have a notes array and contain at least 1 item": true
+				}
+			]
+		},
+		{
+			"id": "4e82d8e3-fea8-4371-a519-1b8028ebe45e",
+			"name": "Getting Specified Note",
+			"url": "https://notes-app-back-end-chi.vercel.app//notes/6sA7rLDM805YbRgW",
+			"time": 525,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response status code should have 200 value": true,
+				"response Content-Type header should have application/json value": true,
+				"response body should be an object": true,
+				"response body should have the correct property and value": true,
+				"response body data should contain note object": true,
+				"note object should contain correct value for id, title, body, and tags property": true
+			},
+			"testPassFailCounts": {
+				"response status code should have 200 value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response Content-Type header should have application/json value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should have the correct property and value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body data should contain note object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"note object should contain correct value for id, title, body, and tags property": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				525
+			],
+			"allTests": [
+				{
+					"response status code should have 200 value": true,
+					"response Content-Type header should have application/json value": true,
+					"response body should be an object": true,
+					"response body should have the correct property and value": true,
+					"response body data should contain note object": true,
+					"note object should contain correct value for id, title, body, and tags property": true
+				}
+			]
+		},
+		{
+			"id": "8ae6fa89-03ae-4f7f-b3ef-6ac72f147038",
+			"name": "Update Note",
+			"url": "https://notes-app-back-end-chi.vercel.app//notes/6sA7rLDM805YbRgW",
+			"time": 507,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response status code should have 200 value": true,
+				"response Content-Type header should have application/json value": true,
+				"response body should be an object": true,
+				"response body should have correct property and value": true,
+				"when request the updated note": true,
+				"then the updated note should contain the latest data": true
+			},
+			"testPassFailCounts": {
+				"response status code should have 200 value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response Content-Type header should have application/json value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should have correct property and value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"when request the updated note": {
+					"pass": 1,
+					"fail": 0
+				},
+				"then the updated note should contain the latest data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				507
+			],
+			"allTests": [
+				{
+					"response status code should have 200 value": true,
+					"response Content-Type header should have application/json value": true,
+					"response body should be an object": true,
+					"response body should have correct property and value": true,
+					"when request the updated note": true,
+					"then the updated note should contain the latest data": true
+				}
+			]
+		},
+		{
+			"id": "8d294be0-93fb-4aec-97ef-230e40e3a266",
+			"name": "Delete Note",
+			"url": "https://notes-app-back-end-chi.vercel.app//notes/6sA7rLDM805YbRgW",
+			"time": 505,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response status code should have 200 value": true,
+				"response Content-Type header should have application/json value": true,
+				"response body should be an object": true,
+				"response body should have correct property and value": true,
+				"when request the deleted note": true,
+				"the deleted note should be not found": true
+			},
+			"testPassFailCounts": {
+				"response status code should have 200 value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response Content-Type header should have application/json value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body should have correct property and value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"when request the deleted note": {
+					"pass": 1,
+					"fail": 0
+				},
+				"the deleted note should be not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				505
+			],
+			"allTests": [
+				{
+					"response status code should have 200 value": true,
+					"response Content-Type header should have application/json value": true,
+					"response body should be an object": true,
+					"response body should have correct property and value": true,
+					"when request the deleted note": true,
+					"the deleted note should be not found": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2675,
+	"collection": {
+		"requests": [
+			{
+				"id": "6493a11c-324d-464b-bb7f-4da715cf2fbd",
+				"method": "POST"
+			},
+			{
+				"id": "78b98945-3a07-4048-aec5-5ca2038803ed",
+				"method": "GET"
+			},
+			{
+				"id": "4e82d8e3-fea8-4371-a519-1b8028ebe45e",
+				"method": "GET"
+			},
+			{
+				"id": "8ae6fa89-03ae-4f7f-b3ef-6ac72f147038",
+				"method": "PUT"
+			},
+			{
+				"id": "8d294be0-93fb-4aec-97ef-230e40e3a266",
+				"method": "DELETE"
+			}
+		]
+	}
+}
